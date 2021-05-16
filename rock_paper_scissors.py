@@ -8,7 +8,16 @@ from random import randint
 player = input('rock (r), paper(p) or scissors(s)?')
 
 # print out what the player chose
-print(player, 'vs', end=' ')
+#print(player, 'vs', end=' ')
+# instead of saying print(player); add a new if statement to check which item the player chose and print out correct  character
+if player == 'r':
+  print('0', 'vs', end=' ') # adding the end='' at the end of print makes it end with a space instead of a new line
+
+if player == 'p':
+  print('__', 'vs', end=' ')
+
+if player == 's':
+  print('8<', 'vs', end=' ')
 
 # use the randint function to generate a random number to decide between rock, paper, and scissors
 # chosen is randomly set to either 1, 2 or 3
@@ -21,16 +30,19 @@ chosen = randint(1,3)
 # == is used to see if 2 things are the same
 if chosen == 1:
   computer = 'r' # set computer to 'r' inside the if (using indentation)
+  print('0')
 # add an alternative check using elif (aka else if)
 # this condition will be checked if the first condition fails (if the computer didn't chose 1)
 elif chosen == 2:
   computer = 'p'
+  print('__')
 # if the computer didn't choose 1 or 2 then it must have chosen 3
 # use else (aka otherwise)
 else:
   computer = 's'
+  print('>8')
 
-print(computer)
+#print(computer)
 
 # check the results
 # add the code to see who won
