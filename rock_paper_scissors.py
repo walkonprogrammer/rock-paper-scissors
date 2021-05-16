@@ -31,3 +31,37 @@ else:
   computer = 's'
 
 print(computer)
+
+# check the results
+# add the code to see who won
+# you will need to compare the player and computer variables to see who won
+# if the are the same then it is a draw
+if player == computer:
+  print('DRAW!')
+
+# create the case where the player chose rock 'r' but the computer did not
+# if the computer chose scissors 's' then the player wins (roc beats scissors)
+# if the computer chose paper 'p' then the computer wins  (paper beats rock)
+# check the player choice and the computer choice using and
+
+elif player == 'r' and computer == 's':
+  print('Player Wins!')
+
+elif player == 'r' and computer == 'p':
+  print('Computer Wins!')
+
+# create the case where the player chose paper 'p' but the computer did not
+
+elif player == 'p' and computer == 'r':
+  print('Player Wins!')
+
+elif player == 'p' and computer == 's':
+  print('Computer Wins!')
+
+# lastly create the case where the player chose scissors 's' and the computer did not
+
+elif player == 's' and computer == 'r':
+  print('Computer Wins!')
+
+elif player == 's' and computer == 'p':
+  print('Player Wins!')
