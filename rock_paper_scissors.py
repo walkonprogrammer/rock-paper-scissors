@@ -77,3 +77,6 @@ elif player == 's' and computer == 'r':
 
 elif player == 's' and computer == 'p':
   print('Player Wins!')
+
+else:
+  print('Huh?')
